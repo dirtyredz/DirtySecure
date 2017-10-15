@@ -17,4 +17,4 @@ Navigate to:
 and place these 2 lines of code at the bottom of the file:
 
     local s, b = pcall(require, 'mods/DirtySecure/scripts/server/server')
-    if s then if b.onPlayerLogIn then local a = onPlayerLogIn; onPlayerLogIn = function(c) a(c); b.onPlayerLogIn(c); end end end
+    if s then if b.onPlayerLogIn then local a = onPlayerLogIn; onPlayerLogIn = function(c) a(c); b.onPlayerLogIn(c); end end else print(b); end
